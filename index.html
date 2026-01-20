@@ -318,20 +318,20 @@
                 renderer: renderer,
                 loop: loop,
                 autoplay: false,
-                path: fileName
+                animationData: lottieData[fileName]
             });
         }
 
         const anims = {
-            0: createLottie('lottie-a', 'cross.json'),
-            1: createLottie('lottie-b', 'circle.json'),
-            2: createLottie('lottie-x', 'square.json'),
-            3: createLottie('lottie-y', 'triangle.json'),
-            12: createLottie('lottie-up', 'up.json'),
-            13: createLottie('lottie-down', 'down.json'),
-            14: createLottie('lottie-left', 'left.json'),
-            15: createLottie('lottie-right', 'right.json'),
-            'holy': createLottie('holy-container', 'haloNEW.json', false, 'canvas')
+            0: createLottie('lottie-a', 'cross'),
+            1: createLottie('lottie-b', 'circle'),
+            2: createLottie('lottie-x', 'square'),
+            3: createLottie('lottie-y', 'triangle'),
+            12: createLottie('lottie-up', 'up'),
+            13: createLottie('lottie-down', 'down'),
+            14: createLottie('lottie-left', 'left'),
+            15: createLottie('lottie-right', 'right'),
+            'holy': createLottie('holy-container', 'halo', false, 'canvas')
         };
 
         [0, 1, 2, 3, 12, 13, 14, 15].forEach(index => {
